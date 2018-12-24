@@ -24,7 +24,7 @@ public class AppController {
 	{
 		logger.info("Request received for name..." + name);
 		logger.info("Response sent for name..." + name);
-		return "Hello bbb.... "+name;
+		return "Hello .... "+name;
 
 	}
 	
