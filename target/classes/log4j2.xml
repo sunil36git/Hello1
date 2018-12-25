@@ -2,10 +2,10 @@
 <Configuration status="INFO" monitorInterval="30">
     <Properties>
         <Property name="PID">????</Property>
-        <property name="name">GoldenCustomer</property>
-        <Property name="log.file.path">/opt/java/logs</Property>
-        <Property name="log.file.archive.path">/opt/java/logs/archive</Property>
-        <Property name="log.file">GoldenCustomer</Property>
+        <property name="name">Hello1</property>
+        <Property name="log.file.path">logs</Property>
+        <Property name="log.file.archive.path">logs/archive</Property>
+        <Property name="log.file">Hello1</Property>
         <Property name="log.file.size">500MB</Property>
         <Property name="log.file.max-files">10</Property>
         <Property name="log.level">INFO</Property>
@@ -25,7 +25,7 @@
         </RollingRandomAccessFile>
     </Appenders>
     <Loggers>
-        <AsyncLogger name="com.ezcorp.goldencustomer" level="${log.level}">
+        <AsyncLogger name="com.test.Hello1" level="${log.level}">
             <AppenderRef ref="Rolling-Random-Access-File-Appender"/>
         </AsyncLogger>
         <Root level="${log.level}">
