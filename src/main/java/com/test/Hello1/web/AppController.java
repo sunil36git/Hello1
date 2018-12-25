@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
@@ -24,12 +26,23 @@ public class AppController {
 	private DataService service;
 	
 	@RequestMapping(value = "/greeting/{name}", method = RequestMethod.GET)
-	public String sayHi(@PathVariable String name) throws JsonProcessingException
+	public String callHello2(@PathVariable String name) throws JsonProcessingException
 	{
 		logger.info("Request received for name..." + name);
-		logger.info("Response sent for name..." + name);
+		String finalresponse = service.getGreeting(name);
+		logger.info("Sending finalresponse  ==  " + finalresponse);
+		return finalresponse;
+				
+	}	
+	
+	@RequestMapping(value = "/{name}", method = RequestMethod.GET)
+	public String justhello1(@PathVariable String name) throws JsonProcessingException
+	{
+		logger.info("Request received for name..." + name);
+		
+		logger.info("Sending response just from Hello1");
 		return "Hi  "+name+" " + service.getGreeting();
 
-	}
-	
+				
+	}	
 }
