@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" monitorInterval="30">
+    <Properties>
+        <Property name="PID">????</Property>
+        <property name="name">Hello1</property>
+        <Property name="log.file.path">logs</Property>
+        <Property name="log.file.archive.path">logs/archive</Property>
+        <Property name="log.file">Hello1</Property>
+        <Property name="log.file.size">500MB</Property>
+        <Property name="log.file.max-files">10</Property>
+        <Property name="log.level">INFO</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console-Appender" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
+        </Console>
+        <RollingRandomAccessFile name="Rolling-Random-Access-File-Appender"
+                             fileName="${log.file.path}/${log.file}.log"
+                          filePattern="${log.file.archive.path}/${log.file}.log.%d{yyyy-MM-dd-hh-mm}.gz">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="${log.file.size}"/>
+            </Policies>
+            <DefaultRolloverStrategy max="${log.file.max-files}"/>
+        </RollingRandomAccessFile>
+    </Appenders>
+    <Loggers>
+        <AsyncLogger name="com.test.Hello1" level="${log.level}">
+            <AppenderRef ref="Rolling-Random-Access-File-Appender"/>
+        </AsyncLogger>
+        <Root level="${log.level}">
+            <AppenderRef ref="Console-Appender"/>
+        </Root>
+    </Loggers>
+</Configuration>
