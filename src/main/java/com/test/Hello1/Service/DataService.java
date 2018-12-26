@@ -11,6 +11,9 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class DataService {
 
+	@Value("${HELLO2_service_uri}")
+	String hello2_service_uri;
+	
 	@Value("${HELLO_MSG}")
 	String hello_msg;
 
@@ -49,7 +52,7 @@ public class DataService {
 	}
 	private String callHello2(String name)
 	{
-	    final String uri = "http://localhost:9002/greeting/"+name;
+	    final String uri = hello2_service_uri+name;
 
 	    RestTemplate restTemplate = new RestTemplate();
 	    String result = restTemplate.getForObject(uri, String.class);

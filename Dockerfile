@@ -2,7 +2,7 @@
 FROM openjdk:8-jdk-alpine
 
 # Add Maintainer Info
-LABEL maintainer="sunil_kumar@ezcorp.com"
+LABEL maintainer="sunil_kumar@gmail.com"
 
 #Name of the environment for which image is being built
 ARG env
@@ -30,15 +30,21 @@ EXPOSE 8080
 COPY target/${SERVICE_NAME}-0.0.1-SNAPSHOT.jar /opt/${SERVICE_NAME}/
 
 # Add the application's configurations for DEV Environment to the container
-COPY resources_dev /opt/$SERVICE_NAME/
+RUN mkdir -p /opt/${SERVICE_NAME}/resources_dev
+RUN chmod -R 555 /opt/${SERVICE_NAME}/resources_dev
+COPY resources_dev/* /opt/$SERVICE_NAME/resources_dev/
 
 # Add the application's configurations for QA Environment to the container
-COPY resources_qa /opt/$SERVICE_NAME/
+RUN mkdir -p /opt/${SERVICE_NAME}/resources_qa
+RUN chmod -R 555 /opt/${SERVICE_NAME}/resources_qa
+COPY resources_qa/* /opt/$SERVICE_NAME/resources_qa/
 
 # Add the application's configurations for UAT Environment to the container
-COPY resources_uat /opt/$SERVICE_NAME/
+RUN mkdir -p /opt/${SERVICE_NAME}/resources_uat
+RUN chmod -R 555 /opt/${SERVICE_NAME}/resources_uat
+COPY resources_uat/* /opt/$SERVICE_NAME/resources_uat/
 
 RUN chmod -R 555 /opt/$SERVICE_NAME/
 
 # Run the jar file
-ENTRYPOINT java -Dlog4j.configurationFile=file:resources_${ENVIRONMENT}/log4j2.xml -DLog4jContextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector -jar ${SERVICE_NAME}-0.0.1-SNAPSHOT.jar --spring.config.location=file:resources_${ENVIRONMENT}/
+ENTRYPOINT java -Dlog4j.configurationFile=file:/opt/$SERVICE_NAME/resources_${ENVIRONMENT}/log4j2.xml -DLog4jContextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector -jar /opt/$SERVICE_NAME/${SERVICE_NAME}-0.0.1-SNAPSHOT.jar --spring.config.location=file:/opt/$SERVICE_NAME/resources_${ENVIRONMENT}/
