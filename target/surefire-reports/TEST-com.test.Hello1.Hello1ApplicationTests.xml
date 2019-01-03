@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.test.Hello1.Hello1ApplicationTests" time="0.001" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="com.test.Hello1.Hello1ApplicationTests" time="0" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\java\jdk\1.8\jre\bin"/>
@@ -26,9 +26,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\TEST_EORKSPACE\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4709380856121181489.tmp"/>
+    <property name="classworlds.conf" value="C:\TEST_EORKSPACE\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1736817560173250896.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\java\jdk\1.8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/java/jdk/1.8/bin/../jre/bin/server;C:/java/jdk/1.8/bin/../jre/bin;C:/java/jdk/1.8/bin/../jre/lib/amd64;C:\java\jdk\1.8\bin;C:\tibco\tibrv\8.4\bin;C:\Program Files (x86)\RSA SecurID Token Common;C:\Program Files\RSA SecurID Token Common;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\nodejs\;C:\Users\skumar\AppData\Local\Programs\Python\Python37-32;C:\Users\skumar\AppData\Local\GitHubDesktop\bin;C:\Users\skumar\AppData\Roaming\npm;C:\SUNIL\Software\Common_SOFTWARE\spring-tool-suite-3.8.4.RELEASE-e4.6.3-win32-x86_64\sts-bundle\sts-3.8.4.RELEASE;;."/>
+    <property name="java.library.path" value="C:\java\jdk\1.8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/java/jdk/1.8/bin/../jre/bin/server;C:/java/jdk/1.8/bin/../jre/bin;C:/java/jdk/1.8/bin/../jre/lib/amd64;C:\java\jdk\1.8\bin;C:\tibco\tibrv\8.4\bin;C:\Program Files (x86)\RSA SecurID Token Common;C:\Program Files\RSA SecurID Token Common;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\nodejs\;C:\Users\skumar\AppData\Local\Programs\Python\Python37-32;C:\;C:\Users\skumar\AppData\Local\GitHubDesktop\bin;C:\Users\skumar\AppData\Roaming\npm;C:\SUNIL\Software\Common_SOFTWARE\spring-tool-suite-3.8.4.RELEASE-e4.6.3-win32-x86_64\sts-bundle\sts-3.8.4.RELEASE;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,5 +60,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="contextLoads" classname="com.test.Hello1.Hello1ApplicationTests" time="0.001"/>
+  <testcase name="contextLoads" classname="com.test.Hello1.Hello1ApplicationTests" time="0"/>
 </testsuite>
