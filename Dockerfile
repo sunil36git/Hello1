@@ -20,7 +20,7 @@ RUN chmod -R 555 /opt/${SERVICE_NAME}/logs
 
 WORKDIR /opt/${SERVICE_NAME}
 
-# Add a volume pointing to /tmp
+# Add a volume pointing to logs
 VOLUME /opt/${SERVICE_NAME}/logs:/opt/java/CP/logs
 
 # Make port 9001 available to the world outside this container
