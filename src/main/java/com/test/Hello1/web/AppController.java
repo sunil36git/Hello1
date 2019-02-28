@@ -1,5 +1,7 @@
 package com.test.Hello1.web;
 
+import java.net.UnknownHostException;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +28,7 @@ public class AppController {
 	private DataService service;
 	
 	@RequestMapping(value = "/greeting/{name}", method = RequestMethod.GET)
-	public String callHello2(@PathVariable String name) throws JsonProcessingException
+	public String callHello2(@PathVariable String name) throws JsonProcessingException, UnknownHostException
 	{
 		logger.info("Request received for name..." + name);
 		String finalresponse = service.getGreeting(name);
