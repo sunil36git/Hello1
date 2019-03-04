@@ -1526,3 +1526,27 @@
 [INFO ] 2018-12-25 16:44:28.037 [http-nio-9001-exec-7] DataService - Sending greeting from Service.getGreeting method.
 [INFO ] 2018-12-25 16:44:28.054 [http-nio-9001-exec-7] DataService - Response reeseived from Hello2 = Hi  sunil from HELLO2 DEV environment
 [INFO ] 2018-12-25 16:44:28.054 [http-nio-9001-exec-7] AppController - Sending finalresponse  ==  Hi  sunil from HELLO1 DEV environment ===== + Concat response from Hello2 ==== >> Hi  sunil from HELLO2 DEV environment
+[INFO ] 2019-03-04 10:39:45.046 [main] Hello1 - Starting Hello1 on EZ-C1JN0N2 with PID 11324 (C:\Users\skumar\git\Hello1\target\classes started by skumar in C:\Users\skumar\git\Hello1)
+[INFO ] 2019-03-04 10:39:45.050 [main] Hello1 - No active profile set, falling back to default profiles: default
+[INFO ] 2019-03-04 10:39:47.427 [main] Hello1 - Started Hello1 in 2.712 seconds (JVM running for 4.47)
+[INFO ] 2019-03-04 10:40:28.483 [http-nio-9001-exec-2] AppController - Request received for name...hi
+[INFO ] 2019-03-04 10:40:28.483 [http-nio-9001-exec-2] AppController - Sending response just from Hello1
+[INFO ] 2019-03-04 10:40:28.483 [http-nio-9001-exec-2] DataService - Sending greeting from Service.getGreeting method.
+[INFO ] 2019-03-04 10:57:14.534 [main] Hello1 - Starting Hello1 on EZ-C1JN0N2 with PID 11824 (C:\Users\skumar\git\Hello1\target\classes started by skumar in C:\Users\skumar\git\Hello1)
+[INFO ] 2019-03-04 10:57:14.539 [main] Hello1 - No active profile set, falling back to default profiles: default
+[INFO ] 2019-03-04 10:57:20.930 [main] Hello1 - Started Hello1 in 6.837 seconds (JVM running for 9.133)
+[INFO ] 2019-03-04 10:57:21.316 [http-nio-9001-exec-1] AppController - Request received for name...hi
+[INFO ] 2019-03-04 10:57:21.316 [http-nio-9001-exec-1] AppController - Sending response just from Hello1
+[INFO ] 2019-03-04 10:57:21.316 [http-nio-9001-exec-1] DataService - Sending greeting from Service.getGreeting method.
+[INFO ] 2019-03-04 10:57:22.921 [http-nio-9001-exec-5] AppController - Request received for name...hi
+[INFO ] 2019-03-04 10:57:22.921 [http-nio-9001-exec-5] AppController - Sending response just from Hello1
+[INFO ] 2019-03-04 10:57:22.921 [http-nio-9001-exec-5] DataService - Sending greeting from Service.getGreeting method.
+[INFO ] 2019-03-04 10:58:28.568 [main] Hello1 - Starting Hello1 on EZ-C1JN0N2 with PID 17228 (C:\Users\skumar\git\Hello1\target\classes started by skumar in C:\Users\skumar\git\Hello1)
+[INFO ] 2019-03-04 10:58:28.571 [main] Hello1 - No active profile set, falling back to default profiles: default
+[INFO ] 2019-03-04 10:58:31.214 [main] Hello1 - Started Hello1 in 2.935 seconds (JVM running for 4.459)
+[INFO ] 2019-03-04 10:58:34.272 [http-nio-9001-exec-1] AppController - Request received for name...hi
+[INFO ] 2019-03-04 10:58:34.272 [http-nio-9001-exec-1] AppController - Sending response just from Hello1
+[INFO ] 2019-03-04 10:58:34.273 [http-nio-9001-exec-1] DataService - Sending greeting from Service.getGreeting method.
+[INFO ] 2019-03-04 10:58:35.814 [http-nio-9001-exec-2] AppController - Request received for name...hi
+[INFO ] 2019-03-04 10:58:35.814 [http-nio-9001-exec-2] AppController - Sending response just from Hello1
+[INFO ] 2019-03-04 10:58:35.814 [http-nio-9001-exec-2] DataService - Sending greeting from Service.getGreeting method.
