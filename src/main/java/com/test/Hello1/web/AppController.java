@@ -38,7 +38,7 @@ public class AppController {
 	}	
 	
 	@RequestMapping(value = "/{name}", method = RequestMethod.GET)
-	public String justhello1(@PathVariable String name) throws JsonProcessingException
+	public String justhello1(@PathVariable String name) throws JsonProcessingException, UnknownHostException
 	{
 		logger.info("Request received for name..." + name);
 		

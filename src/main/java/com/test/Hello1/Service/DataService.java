@@ -31,10 +31,11 @@ public class DataService {
 	 * @param msg
 	 *            A variable of type String.
 	 * @return String
+	 * @throws UnknownHostException 
 	 */
-	public String getGreeting() {
+	public String getGreeting() throws UnknownHostException {
 		logger.info("Sending greeting from Service.getGreeting method.");
-		return hello_msg;
+		 return hello_msg + "< IP : "+ InetAddress.getLocalHost();
 	}
 	
 	/**
