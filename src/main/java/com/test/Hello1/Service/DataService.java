@@ -57,8 +57,9 @@ public class DataService {
 	}
 	private String callHello2(String name)
 	{
-	    final String uri = hello2_service_uri+name;
-
+	    String uri =hello2_service_uri+name;
+	    logger.info("URI IS-"+uri);
+	    uri = uri.trim();
 	    RestTemplate restTemplate = new RestTemplate();
 	    String result = restTemplate.getForObject(uri, String.class);
 
