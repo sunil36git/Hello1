@@ -20,11 +20,16 @@ WORKDIR /opt/
 #VOLUME /opt/logs:/opt/java/CP/logs
 
 # Make port 8080 available to the world outside this container
-EXPOSE 8080
+#EXPOSE 8080
 
 # copy jar file to the location /opt/ in the container
 COPY target/${SERVICE_NAME}-0.0.1-SNAPSHOT.jar /opt/
 
+# copy jar file to the location /opt/ in the container
+RUN mkdir -p /opt/config
+COPY resources_dev/* /opt/config/
+
+RUN chmod -R 555 /opt/config 
 RUN chmod -R 555 /opt/
 
 # Run the jar file
